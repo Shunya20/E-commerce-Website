@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <div >
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+                <li><a href="Login.html"><button class="normal">Login</button></li></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section>
+    <div class="container">
+        <form action="/payment" method="post">
+            <!-- <input type="hidden" name="access_key" value="a8a6c7d8-8e2a-4a75-b93c-b230c44d7401"/> -->
+            <div class="row">
+                <div class="column">
+                    <h3 class="title">Billing Address</h3>
+                    <div class="input-box">
+                        <span>Full Name:</span>
+                        <input type="text" placeholder="Name" name="name" >
+                    </div>
+                    <div class="input-box">
+                        <span>Email:</span>
+                        <input type="email" placeholder="Email" name="email" >
+                    </div>               
+                    <div class="input-box">
+                        <span>Address:</span>
+                        <input type="text" placeholder="Address" name="address" >
+                    </div>
+                    <div class="input-box">
+                        <span>City:</span>
+                        <input type="text" placeholder="City" name="city" >
+                    </div>
+
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>State:</span>
+                            <input type="text" placeholder="State" name="state" >
+                        </div>
+                        <div class="input-box">
+                            <span>Pincode:</span>
+                            <input type="number" placeholder="Pincode" name="pincode">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <h3 class="title">Payment</h3>
+                    <div class="input-box">
+                        <span>Cards Accepted:</span>
+                        <img src="pay.png" alt="">
+                    </div>
+                    <div class="input-box">
+                        <span>Name on Card:</span>
+                        <input type="text" placeholder="Name" name="cardname" required>
+                    </div>               
+                    <div class="input-box">
+                        <span>Credit Card Number:</span>
+                        <input type="number" placeholder="Card Number" name="cardnumber"required>
+                    </div>
+                    <div class="input-box">
+                        <span>CVV :</span>
+                        <input type="number" placeholder="CVV" name="cvv"required >
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>Exp. Year:</span>
+                            <input type="number" placeholder="Year" name="expyear" required>
+                        </div>
+                        <div class="input-box">
+                            <span>Exp. Month:</span>
+                            <input type="text" placeholder="Month" name="expmonth" required >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="Paymentsuccess.html"><button type="submit" class="btn">Submit</button></a>
+        </form>
+    </div>
+</section>
+
+<section id="newsletter" class="section-p1 section-m1" >
+    <div class="newstext">
+        <h4>Sign Up For Newsletter</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span> </p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="  Your e-mail address">
+        <button class="normal">SignUp</button>
+    </div>
+</section>
+
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>Contact</h4>
+        <p> <strong>Address:</strong> 562 Wellington Road,Street 32,San Francisco</p>
+        <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00,Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+    
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Secured Payment Gateways </p>
+        <img src="img//pay/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+        <p> &copy; 2024, E-commerece Website</p>
+    </div>
+
+</footer>
+
+    
+</body>
+</html>
